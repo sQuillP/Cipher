@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cipher</title>
+	<style type="text/css">
+		
+		body {
+			background: #90918a;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+
+		}
+
+		.content {
+			background: white;
+			border-radius: 10px;
+			padding: 20px;
+		}
+
+		.content >* {
+			margin: 10px;
+			text-align: center;
+		}
+
+		#keyInput {
+			width: 25%;
+		}
+
+		textarea{
+			resize: none;
+			height: 100px;
+			width: 200px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+
+
+
+	<div class ='container'>
+
+		<div class='content'>
+
+			<div id='textInput'>
+				<h1>Encipher your code!</h1>
+				<textarea id='input'></textarea>
+			</div>
+
+
+			<div id = 'textOutput'>
+				<h2>Output</h2>
+				<textarea readonly id='output'></textarea>
+			</div>
+
+
+			<div>
+				<button id='encodeButton'>Encode</button>
+				<button id='decodeButton'>Decode</button>
+			</div>
+
+			<div>
+				<label for='key'>Key:</label>
+				<input type="text" name="key" id ='keyInput'>
+				<div>
+					<label for ='Algorithm'>Choose Algorithm:</label>
+					<select name = 'Algorithm' id ='Algorithm'>
+						<option>Playfair</option>
+						<option>Vigenere</option>
+						<option>Caesar Cipher</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+<script type="text/javascript" src='cipher.js'></script>
+</body>
+</html>
